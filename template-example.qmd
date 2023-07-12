@@ -6,7 +6,7 @@ title-slide-attributes:
   data-background-image: _extensions/positconfslides/assets/backgrounds/toc-light.svg
   data-background-size: contain
 format:
-  positslides-revealjs: 
+  positconfslides-revealjs: 
     chalkboard: true
     slide-number: c/t
     code-copy: true
