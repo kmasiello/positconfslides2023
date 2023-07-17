@@ -1,6 +1,6 @@
 ---
 title: "Presentation title"
-subtitle: "🔗 [link-to-slides.pos.it](https://link-to-slides.pos.it)"
+subtitle: "🔗 [mine.quarto.pub/conf2023-template](https://mine.quarto.pub/conf2023-template)"
 author: "Author"
 title-slide-attributes: 
   data-background-color: black
