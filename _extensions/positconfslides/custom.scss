@@ -4,96 +4,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400');
 
-// css
-
-#title-slide > h1 {
-  text-align: left;
-  font-weight: 300;
-  color: #404041;
-}
-
-#title-slide > p {
-  color: #818184;
-  font-size: 65px;
-  text-align: left;
-  font-weight: 300;
-}
-
-div.has-dark-background h2 {
-  color: #eee !important; // someone better at design than me should fix this.
-}
-
-div.has-dark-background {
-  color: #eee !important; // someone better at design than me should fix this.
-}
-
-section.has-dark-background > h2 {
-  font-weight: 300 !important;
-  color: #eee !important; // someone better at design than me should fix this.
-}
-
-h2 {
-  font-weight: 300 !important;
-  color: #404041 !important;
-}
-
-
-
-body {
-  font-weight: 400 !important;
-  color: #404041 !important;
-}
-
-// fonts
 $font-family-sans-serif: 'Open Sans', sans-serif !default;
 $font-family-monospace: 'Source Code Pro', monospace !default;
+$presentation-heading-font: "Open Sans", sans-serif !default;
+$presentation-title-slide-text-align: left;
+$presentation-heading-font-weight: 300;
+$code-block-font-size: 0.90em;
 
 // colors
-$body-bg: #FFF !default;
-$body-color: #404041 !default;
-$link-color: #447099 !default;
-$code-color: #72994E !default;
-$selection-bg: #EE6331;
-
-// more Colors
-$darkblue: #19294D;
-$darkyellow: #FCA311;
-$silver: #F6F6F6;
-$lightblue: #A6CFD5;
-$altred: #A33B20;
-$darkgreen: #5B6C5D;
+$body-bg:      #FFFFFF;
+$body-color:   #404041;
+$code-color:   #9a4665;
+$selection-bg: #93bdbf;
+$link-color:   #3D6E74;
 
 // dark colors
-$dark-bg-text-color:	#fff !default;
-$dark-bg-link-color:	#A2B8CB !default;
-$dark-bg-code-color:	#72994E !default;
+$dark-bg-text-color:	#F0F0F0;
+$dark-bg-code-color:	#cca2b2;
+$dark-bg-link-color:	#93bdbf;
 
+/*-- scss:rules --*/
 
-// headings
-$presentation-heading-font: "Open Sans", sans-serif !default;
+#title-slide .subtitle {
+  font-size: 60px;
+  font-weight: 600;
+}
 
+#title-slide .quarto-title-author-name {
+  font-size: 50px;
+  font-weight: 300;
+}
 
-// Footer deets
+#title-slide .institute {
+  font-weight: 1000;
+}
+
+// dark slides
+section div.has-dark-background {
+  color: $dark-bg-text-color;
+}
+
+section div.has-dark-background h2 {
+  font-weight: 300 !important;
+  color: $dark-bg-text-color;
+}
+
+section div.has-dark-background code {
+  color: $dark-bg-code-color;
+}
+
+section div.has-dark-background a {
+  color: $dark-bg-link-color;
+}
+
+section div.has-dark-background blockquote {
+  color: #c9c9c9;
+}
+
+// don't add margin to last column
+
+.reveal .columns>.column:last-child>:not(ul,ol) {
+  margin-left: 0;
+}
+
+// footer details
 .reveal .slide-number a {
-    font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .reveal .footer p {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-// Custom Region
-.darkblue {color: $darkblue;}
-.darkyellow {color: $darkyellow;}
-.silver {color: $silver;}
-.lightblue {color: $lightblue;}
-.altred {color: $altred;}
-.darkgreen {color: $darkgreen;}
+// font sizes
 
 .smaller{font-size:smaller}
 
 .medium{font-size:medium}
 
-.bigger{font-size:150%;}
+.large{font-size:150%;}
 
-.biggest{font-size:250%;}
+.larger{font-size:250%;}
+
+.largest{font-size:500%;}

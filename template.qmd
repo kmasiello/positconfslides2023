@@ -1,0 +1,260 @@
+---
+title: "Presentation title"
+subtitle: "🔗 [mine.quarto.pub/conf2023-template](https://mine.quarto.pub/conf2023-template)"
+author: "Author"
+title-slide-attributes: 
+  data-background-color: black
+  data-background-image:  _extensions/positconfslides/assets/backgrounds/toc-people-dark.svg
+  data-background-size: contain
+format:
+  positconfslides-revealjs: 
+    chalkboard: true
+    slide-number: c/t
+    code-copy: true
+    center-title-slide: false
+    code-link: true
+    code-overflow: wrap
+    highlight-style: a11y
+    width: "1600"
+    height: "900"
+    filters:
+      - positconfslides
+---
+
+## Title slide options {.smaller}
+
+You have 6 options:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Light:**
+
+1.  Light green + buildings:
+
+``` yaml
+title-slide-attributes:
+  data-background-color: white
+  data-background-image:  _extensions/positconfslides/assets/backgrounds/toc-light.svg
+```
+
+2. Light maroon + buildings:
+
+``` yaml
+title-slide-attributes:
+  data-background-color: white
+  data-background-image:  _extensions/positconfslides/assets/backgrounds/toc2-light.svg
+```
+
+3.  Light + people:
+
+``` yaml
+title-slide-attributes:
+  data-background-color: white
+  data-background-image:  _extensions/positconfslides/assets/backgrounds/toc-people-light.svg
+```
+:::
+
+::: {.column width="50%"}
+**Dark:**
+
+4.  Dark green + buildings:
+
+``` yaml
+title-slide-attributes:
+  data-background-color: black
+  data-background-image:  _extensions/positconfslides/assets/backgrounds/toc-dark.svg
+```
+
+5.  Dark maroon + buildings:
+
+``` yaml
+title-slide-attributes:
+  data-background-color: black
+  data-background-image:  _extensions/positconfslides/assets/backgrounds/toc2-dark.svg
+```
+
+6.  Dark + people:
+
+``` yaml
+title-slide-attributes:
+  data-background-color: black
+  data-background-image:  _extensions/positconfslides/assets/backgrounds/toc-people-dark.svg
+```
+:::
+
+::::
+
+## Table of contents, light green + buildings {.toc-light}
+
+-   Some stuff
+-   Some more stuff
+    -   And yet more!
+    
+## Table of contents, light maroon + buildings {.toc2-light}
+
+-   Some stuff
+-   Some more stuff
+    -   And yet more!
+
+## Table of contents, light + people {.toc-people-light}
+
+-   Some stuff
+-   Some more stuff
+    -   And yet more!
+
+## Table of contents, dark green + buildings {.toc-dark}
+
+-   Some stuff
+-   Some more stuff
+    -   And yet more!
+
+## Table of contents, dark maroon + buildings {.toc2-dark}
+
+-   Some stuff
+-   Some more stuff
+    -   And yet more!
+
+## Table of contents, dark + people {.toc-people-dark}
+
+-   Some stuff
+-   Some more stuff
+    -   And yet more!
+
+## 30/70 columns, light green content {.30-70-light}
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3, [with a link](https://posit.co)
+
+Lorem ipsum dolor sit `amet`, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```r
+plot(cars)
+```
+
+## 30/70 columns, dark green content {.30-70-dark}
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3, [with a link](https://posit.co)
+
+Lorem ipsum dolor sit `amet`, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```r
+plot(cars)
+```
+
+## 30/70 columns, white content {.30-70-white}
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3, [with a link](https://posit.co)
+
+Lorem ipsum dolor sit `amet`, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```r
+plot(cars)
+```
+
+## White background, dark green dots {.content-light}
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3, [with a link](https://posit.co)
+
+Lorem ipsum dolor sit `amet`, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```r
+plot(cars)
+```
+
+## White background, maroon dots {.content2-light}
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3, [with a link](https://posit.co)
+
+Lorem ipsum dolor sit `amet`, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```r
+plot(cars)
+```
+
+## Dark green background, light green dots {.content-dark}
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3, [with a link](https://posit.co)
+
+Lorem ipsum dolor sit `amet`, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```r
+plot(cars)
+```
+
+## brackets-light {.brackets-light}
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3, [with a link](https://posit.co)
+
+Lorem ipsum dolor sit `amet`, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```r
+plot(cars)
+```
+
+## brackets-dark {.brackets-dark}
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3, [with a link](https://posit.co)
+
+Lorem ipsum dolor sit `amet`, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```r
+plot(cars)
+```
+
+## No format
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3, [with a link](https://posit.co)
+
+Lorem ipsum dolor sit `amet`, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```r
+plot(cars)
+```
+
+## {.content-dark data-menu-title="Closing slide"}
+
+::: {.callout-tip title="Closing slide tip"}
+For your closing slide you might want to omit the slide title.
+:::
+
+<br><br>
+
+::: largest
+Thank you.
+:::

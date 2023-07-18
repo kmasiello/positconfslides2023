@@ -32,6 +32,28 @@ function blank_column(_content)
     return { pandoc.RawBlock("html", "&nbsp;") }
 end
 
+function header_column_narrow_light(c)
+    local result = pandoc.List({})
+    local title = pandoc.utils.stringify(c[1].content)
+    result:insert(pandoc.RawBlock("html", "<h2 style='color: #404041 !important;'>" .. title .. "</h2>"))
+    return result
+end
+
+function header_column_narrow_dark(c)
+    local result = pandoc.List({})
+    local title = pandoc.utils.stringify(c[1].content)
+    result:insert(pandoc.RawBlock("html", "<h2 style='color: #F0F0F0;'>" .. title .. "</h2>"))
+    return result
+end
+
+function content_column_wide(c)
+    local result = pandoc.List({})
+    local title = pandoc.utils.stringify(c[1].content)
+    result:extend(c)
+    result:remove(1)
+    return result
+end
+
 function content_column(c)
     local result = pandoc.List({})
     local title = pandoc.utils.stringify(c[1].content)
@@ -46,34 +68,15 @@ for i, v in ipairs({
     { image = "30-70-dark",
       dark = true,
       widths = { "35%", "65%" },
-      columns = { blank_column, content_column },
+      columns = { header_column_narrow_light, content_column_wide },
     },
     { image = "30-70-light",
       widths = { "35%", "65%" },
-      columns = { blank_column, content_column },
+      columns = { header_column_narrow_dark, content_column_wide },
     },
     { image = "30-70-white",
       widths = { "35%", "65%" },
-      columns = { blank_column, content_column },
-    },
-    { image = "dark-section",
-      dark = true,
-      widths = { "35%", "65%" },
-      columns = { blank_column, content_column },
-    },
-    { image = "dark-section-2",
-      dark = true,
-      widths = { "55%", "45%" },
-      columns = { blank_column, content_column },
-    },
-    { image = "dark-section-3",
-      dark = true,
-      widths = { "45%", "55%" },
-      columns = { function (content)
-        local result = content_column(content)
-        result:insert(1, pandoc.RawBlock("html", "<br>"))
-        return result
-     end, blank_column },
+      columns = { header_column_narrow_dark, content_column_wide },
     },
     { image = "brackets-dark",
       dark = true,
