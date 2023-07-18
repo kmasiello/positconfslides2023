@@ -17,7 +17,7 @@ function many_columns(conf)
     local header_block = pandoc.Header(2, "")
 
     header_block.attr.attributes["background-image"] = "_extensions/positconfslides/assets/backgrounds/" .. background_image .. ".svg"
-    header_block.attr.attributes["background-size"] = "stretch"
+    header_block.attr.attributes["background-size"] = "contain"
 
     local new_blocks = pandoc.List({})
     new_blocks:insert(header_block)
