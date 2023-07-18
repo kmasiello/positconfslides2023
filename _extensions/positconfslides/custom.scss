@@ -14,14 +14,14 @@ $code-block-font-size: 0.90em;
 // colors
 $body-bg:      #FFFFFF;
 $body-color:   #404041;
-$code-color:   #717172;
-$selection-bg: #c290a2;
+$code-color:   #9a4665;
+$selection-bg: #93bdbf;
 $link-color:   #3D6E74;
 
 // dark colors
-$dark-bg-text-color:	#F0F0F0 !default;
-$dark-bg-code-color:	#b1b1b3 !default;
-$dark-bg-link-color:	#FF0000 !default;
+$dark-bg-text-color:	#F0F0F0;
+$dark-bg-code-color:	#cca2b2;
+$dark-bg-link-color:	#93bdbf;
 
 /*-- scss:rules --*/
 
@@ -40,25 +40,25 @@ $dark-bg-link-color:	#FF0000 !default;
 }
 
 // dark slides
-div.has-dark-background h2 {
-  color: #F0F0F0 !important;
+section div.has-dark-background {
+  color: $dark-bg-text-color;
 }
 
-div.has-dark-background {
-  color: #F0F0F0 !important;
-}
-
-section.has-dark-background > h2 {
+section div.has-dark-background h2 {
   font-weight: 300 !important;
-  color: #F0F0F0 !important;
+  color: $dark-bg-text-color;
 }
 
-section.has-dark-background a {
+section div.has-dark-background code {
+  color: $dark-bg-code-color;
+}
+
+section div.has-dark-background a {
   color: $dark-bg-link-color;
 }
 
-section.has-dark-background .reveal > blockquote {
-  color: #FF0000;
+section div.has-dark-background blockquote {
+  color: #c9c9c9;
 }
 
 // don't add margin to last column
@@ -74,10 +74,6 @@ section.has-dark-background .reveal > blockquote {
 
 .reveal .footer p {
     font-family: 'Barlow Condensed', sans-serif;
-}
-
-.slide-number {
-  background-color: #FFFFFF !important;
 }
 
 // font sizes
