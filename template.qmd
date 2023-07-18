@@ -1,7 +1,7 @@
 ---
 title: "Presentation title"
-subtitle: "🔗 [mine.quarto.pub/conf2023-template](https://mine.quarto.pub/conf2023-template)"
-author: "Author"
+subtitle: "🔗 [katie.quarto.pub/positconf2023](https://katie.quarto.pub/positconf2023)"
+author: "Katie Masiello <br> Mine Cetinkaya-Rundel"
 title-slide-attributes: 
   data-background-color: black
   data-background-image:  _extensions/positconfslides/assets/backgrounds/toc-people-dark.svg

@@ -1,0 +1,6 @@
+- source: template.qmd
+  quarto-pub:
+    - id: c6b622d3-6acc-42d5-be96-63a01e22dcf9
+      url: 'https://katie.quarto.pub/positconfslides-template'
+    - id: 3f69414b-9ca0-4827-b6ec-4bf6c666738f
+      url: 'https://katie.quarto.pub/positconf2023'
