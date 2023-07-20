@@ -22,5 +22,5 @@ or
 
 See `_extensions/positconfslides/assets/backgrounds` for all backgrounds available.
 
-See <https://katie.quarto.pub/positconf2023-template/#/title-slide> (source code `template.qmd`) for all examples.
+See <https://katie.quarto.pub/positconf2023/#/title-slide> (source code `template.qmd`) for all examples.
 
