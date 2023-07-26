@@ -66,7 +66,7 @@ end
 function bracket_content(c)
     local result = pandoc.List({})
     local title = pandoc.utils.stringify(c[1].content)
-    result:insert(pandoc.RawBlock("html", "<h2 style='margin-left:50px;'>" .. title .. "</h2>"))
+    result:insert(pandoc.RawBlock("html", "<h2 style='margin-left:50px; margin-top:5px;'>" .. title .. "</h2>"))
     result:extend(c)
     result:remove(2)
     return result
