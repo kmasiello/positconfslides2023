@@ -63,6 +63,15 @@ function content_column(c)
     return result
 end
 
+function bracket_content(c)
+    local result = pandoc.List({})
+    local title = pandoc.utils.stringify(c[1].content)
+    result:insert(pandoc.RawBlock("html", "<h2 style='margin-left:50px;'>" .. title .. "</h2>"))
+    result:extend(c)
+    result:remove(2)
+    return result
+end
+
 local blank = pandoc.RawBlock("html", "&nbsp;")
 for i, v in ipairs({
     { image = "30-70-dark",
@@ -81,11 +90,11 @@ for i, v in ipairs({
     { image = "brackets-dark",
       dark = true,
       widths = { "100%" },
-      columns = { content_column },
+      columns = { bracket_content },
     },
     { image = "brackets-light",
       widths = { "100%" },
-      columns = { content_column },
+      columns = { bracket_content },
     },
     { image = "content-dark",
       dark = true,
